@@ -1,0 +1,35 @@
+Springboard Capstone 2
+Ray Karpman
+01/30/2022
+
+Model Metrics
+
+Features: listed below. An asterix indicates a new feature I created.
+
+- State: U.S. state where business located
+- ApprovalFY: fiscal year loan was approved
+- Term: loan term, months
+- NoEmp: number of employees 
+- NewExist: whether business has existed more than 2 years
+- LowDoc: whether a low-document application was used
+- GrAppv: total loan amount approved
+- SBA_Appv: amount guaranteed by the SBA
+- is_franchise: is the business a franchise
+- industry: first two digits of NAICS classification code
+- region: groups the State feature into 8 Bureau of Economic Analysis regions
+
+Labels: MIS_Status. The positive class MIS_Status_CHGOFF means default.
+
+Algorithm: gradient boosting, using sklearn GradientBoostingClassifier 
+
+Hyperparameters: max_depth = 11
+
+Fit time on training set: 14 minutes 2 seconds
+
+Performance on test set:
+
+- precision: 0.83
+- recall: 0.86
+- f1-score: 0.85
+- accuracy: 0.95
+- prediction time: 2.01 seconds
