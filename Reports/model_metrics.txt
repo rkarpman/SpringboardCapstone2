@@ -4,7 +4,7 @@ Ray Karpman
 
 Model Metrics
 
-Features: listed below. An asterix indicates a new feature I created.
+Features:
 
 - State: U.S. state where business located
 - ApprovalFY: fiscal year loan was approved
